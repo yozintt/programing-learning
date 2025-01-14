@@ -1,0 +1,174 @@
+Aqui estão alguns exercícios simples para treinar lógica de programação:
+
+
+---
+
+1. Números Pares e Ímpares
+
+Crie um programa que receba um número do usuário e diga se ele é par ou ímpar.
+
+
+---
+
+2. Soma de Números
+
+Escreva um programa que:
+
+Solicite ao usuário dois números.
+
+Some esses números e exiba o resultado.
+
+
+
+---
+
+3. Tabuada
+
+Crie um programa que:
+
+Peça um número ao usuário.
+
+Mostre a tabuada (de 1 a 10) desse número.
+
+
+
+---
+
+4. Contagem Regressiva
+
+Faça um programa que:
+
+Mostre uma contagem regressiva de 10 a 0, com uma pausa de 1 segundo entre os números (se a linguagem usada suportar).
+
+
+
+---
+
+5. Número Maior
+
+Escreva um programa que receba três números e informe qual deles é o maior.
+
+
+---
+
+6. Calculadora Simples
+
+Crie um programa que:
+
+1. Solicite dois números e uma operação (adição, subtração, multiplicação ou divisão).
+
+
+2. Realize a operação indicada e mostre o resultado.
+
+
+
+
+---
+
+7. Média de Notas
+
+Crie um programa que:
+
+Peça três notas de um aluno.
+
+Calcule e exiba a média.
+
+Informe se o aluno foi aprovado (média maior ou igual a 7) ou reprovado.
+
+
+
+---
+
+8. Verificador de Palíndromo
+
+Peça ao usuário uma palavra e verifique se ela é um palíndromo (ex.: "ana", "arara").
+
+
+---
+
+9. Sequência de Fibonacci
+
+Faça um programa que:
+
+Peça um número ao usuário.
+
+Mostre os primeiros n números da sequência de Fibonacci.
+
+
+
+---
+
+10. Jogo de Adivinhação
+
+Escreva um programa que:
+
+1. Gera um número aleatório entre 1 e 100 (ou peça ao usuário definir o limite).
+
+
+2. Permita que o usuário tente adivinhar o número.
+
+
+3. Dê dicas de "maior" ou "menor" até que o número seja acertado.
+
+
+
+
+---
+
+11. Soma de Ímpares
+
+Faça um programa que:
+
+1. Solicite um número inteiro positivo.
+
+
+2. Calcule e exiba a soma de todos os números ímpares até esse número.
+
+
+
+
+---
+
+12. Ordenação Simples
+
+Peça ao usuário três números e mostre-os em ordem crescente.
+
+
+---
+
+13. Fatorial
+
+Peça um número ao usuário e calcule o seu fatorial (ex.: 5! = 5 × 4 × 3 × 2 × 1).
+
+
+---
+
+14. Calculadora de Idade
+
+Crie um programa que:
+
+1. Peça o ano de nascimento do usuário.
+
+
+2. Calcule e exiba sua idade atual.
+
+
+
+
+---
+
+15. Números Primos
+
+Crie um programa que:
+
+1. Peça um número inteiro ao usuário.
+
+
+2. Informe se o número é primo ou não.
+
+
+
+
+---
+
+Esses exercícios são ótimos para praticar estruturas de controle, loops e entrada/saída de dados. Escolha um e tente resolver! Se precisar de ajuda com algum deles, posso ajudar.
