@@ -18,4 +18,10 @@ function calculoIMC(altura, peso) {
     return console.log(`Você está com obesidade mórbida`);
   }
 }
-calculoIMC(1.78, 80);
+
+const pessoa = {
+  altura: 1.78,
+  peso: 80,
+};
+
+calculoIMC(pessoa.altura, pessoa.peso);

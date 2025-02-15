@@ -1,10 +1,8 @@
-const number = [0, 10, 8, 12, 2, 5];
-const sorted = number.sort((a, b) => {
-  return a - b;
-});
-/* Forma implicita:
-const sorted = number.sort((a, b) => a - b);
-Forma decrescente:
-const sorted = number.sort((a, b) => b - a);
-*/
-console.log(sorted);
+function wrapValue(n) {
+  let local = n;
+  return () => local;
+}
+let wrap1 = wrapValue(1);
+let wrap2 = wrapValue(2);
+console.log(wrap1());
+console.log(wrap2());
