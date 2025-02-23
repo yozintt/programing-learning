@@ -8,4 +8,7 @@ function countBs(string, ch) {
   }
   return saveString;
 }
-console.log(countBs("BOB", "B"));
+function reUseit(string) {
+  return countBs(string, "B");
+}
+console.log(reUseit("BOB"));
