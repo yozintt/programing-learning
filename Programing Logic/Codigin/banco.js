@@ -3,6 +3,7 @@
 2 - Faça uma função de autenticação que recebe como parâmetros user e password
 3 - Faça uma função que retira ou adiciona valores na conta de um usuário
 4 - Faça uma função que recebe como parâmetro um user, uma senha, e o valor que vai ser adicionado ou retirado da conta, depois realize essas ações
+5 - criar uma funçao fluxo Completo, que vai cadastrar um usuario novo, fazer login, depositar e mostrar o usuario novo com o valor atualizado!
 */
 
 const bancoDeDados = [
@@ -29,31 +30,41 @@ const bancoDeDados = [
 function autenticacao(user, password) {
   for (let i = 0; i < bancoDeDados.length; i++) {
     if (user === bancoDeDados[i].user) {
-      console.log(`User: ${bancoDeDados[i].user} Logged`);
+      console.log(`Usuario: ${bancoDeDados[i].user}`);
       if (password === bancoDeDados[i].password) {
-        console.log(`Your password is right!`);
+        console.log(`usuario logado!`);
+        return bancoDeDados[i].value;
       }
     }
-    return bancoDeDados[i].value;
   }
 }
-console.log(autenticacao("Yozin", "Chitaozinho"));
 
-function deposit(user, amount) {
+function deposito(user, amount) {
   for (let i = 0; i < bancoDeDados.length; i++) {
     if (user === bancoDeDados[i].user) {
-      amount += bancoDeDados[i].value;
+      bancoDeDados[i].value += amount;
     }
   }
-  return amount;
 }
-console.log(deposit("Yozin", 1000));
 
-function register(name, user, password, value) {
-  let bancoDeDadosNovo = [];
-  bancoDeDadosNovo = bancoDeDados;
-  bancoDeDadosNovo.push({ name, user, password, value });
+function registrar(name, user, password) {
+  bancoDeDados.push({ name: name, user: user, password: password, value: 0 });
 
-  return bancoDeDadosNovo;
+  return bancoDeDados;
 }
-console.log(register("Laís", "cunhadinha", "Patata", 1000));
+
+const getUser = (user) => {
+  for (let i = 0; i < bancoDeDados.length; i++) {
+    if (user === bancoDeDados[i].user) {
+      return bancoDeDados[i];
+    }
+  }
+};
+
+const fluxoCompleto = (name, user, password, deposit) => {
+  registrar(name, user, password, deposit);
+  autenticacao(user, password);
+  deposito(user, deposit);
+  return getUser(user);
+};
+console.log(fluxoCompleto("Mariana", "nega feia", "MariaMole", 100));
